@@ -1,9 +1,9 @@
 const cohere = require('cohere-ai');
-const { cohereApiKey } = require('../config/');
+/* const { cohereApiKey } = require('../config/');
+ */
 
-cohere.init(cohereApiKey);
-
-const aiRecommendation = async (query) => {
+const aiRecommendation = async (query, cohereApiKey) => {
+  cohere.init(cohereApiKey);
   const response = await cohere.generate({
     model: 'xlarge',
     prompt: query,

@@ -2,6 +2,6 @@
 package-lock.json
 .env
 .dockerignore
-dataset
+/dataset
 fly.toml
 Dockerfile
