@@ -1,5 +1,3 @@
-
-require('dotenv').config();
 const cohere = require('cohere-ai');
 const { api_key } = require('./config');
 
