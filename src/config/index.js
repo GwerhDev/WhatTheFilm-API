@@ -1,6 +1,12 @@
 module.exports = {
-  api_key: process.env.API_KEY,
+  apiUrl: process.env.API_URL,
   port: process.env.PORT,
   privateSecret: process.env.PRIVATE_SECRET,
-  mongodbUri: process.env.MONGODB_URI
+  //cohere
+  cohereApiKey: process.env.COHERE_API_KEY,
+  //mongodb
+  mongodbUri: process.env.MONGODB_URI,
+  //google
+  googleClientId: process.env.GOOGLE_CLIENT_ID,
+  googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
 }
